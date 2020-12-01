@@ -19,7 +19,7 @@ def create_app():
     def callback():
 
         if request.method == "GET":
-            return "Hello Heroku"
+            return "Hello GCP"
         if request.method == "POST":
             signature = request.headers["X-Line-Signature"]
             body = request.get_data(as_text=True)
